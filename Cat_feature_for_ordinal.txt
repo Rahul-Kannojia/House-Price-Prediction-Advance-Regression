@@ -1,0 +1,258 @@
+===============================================================
+
+LotShape: ['Reg' 'IR1' 'IR2' 'IR3']
+LandSlope: ['Gtl' 'Mod' 'Sev']
+LandContour: ['Lvl' 'Bnk' 'HLS' 'Low']
+ExterQual: ['Gd' 'TA' 'Ex' 'Fa']
+ExterCond: ['TA' 'Gd' 'Fa' 'Po' 'Ex']
+BsmtQual: ['Gd' 'TA' 'Ex' nan 'Fa']
+BsmtCond: ['TA' 'Gd' nan 'Fa' 'Po']
+BsmtExposure: ['No' 'Gd' 'Mn' 'Av' nan]
+BsmtFinType1: ['GLQ' 'ALQ' 'Unf' 'Rec' 'BLQ' nan 'LwQ']
+BsmtFinType2: ['Unf' 'BLQ' nan 'ALQ' 'Rec' 'LwQ' 'GLQ']
+HeatingQC: ['Ex' 'Gd' 'TA' 'Fa' 'Po']
+KitchenQual: ['Gd' 'TA' 'Fa' 'Ex']
+Functional: ['Typ' 'Min1' 'Maj1' 'Min2' 'Mod' 'Maj2' 'Sev']
+FireplaceQu: [nan 'TA' 'Gd' 'Fa' 'Ex' 'Po']
+GarageFinish: ['RFn' 'Unf' 'Fin' nan]
+GarageQual: ['TA' 'Fa' 'Gd' nan 'Po' 'Ex']
+GarageCond: ['TA' 'Fa' nan 'Gd' 'Po' 'Ex']
+PavedDrive: ['Y' 'N' 'P']
+===================================================================
+----------------------------------------------------------------
+ExterQual: ['Gd' 'TA' 'Ex' 'Fa']
+ExterCond: ['TA' 'Gd' 'Fa' 'Po' 'Ex']
+BsmtQual: ['Gd' 'TA' 'Ex' nan 'Fa']
+BsmtCond: ['TA' 'Gd' nan 'Fa' 'Po']
+HeatingQC: ['Ex' 'Gd' 'TA' 'Fa' 'Po']
+KitchenQual: ['Gd' 'TA' 'Fa' 'Ex']
+FireplaceQu: [nan 'TA' 'Gd' 'Fa' 'Ex' 'Po']
+GarageQual: ['TA' 'Fa' 'Gd' nan 'Po' 'Ex']
+GarageCond: ['TA' 'Fa' nan 'Gd' 'Po' 'Ex']
+
+['TA' 'Fa' 'Gd' nan 'Po' 'Ex']
+
+['nan','Po','Fa','TA','Gd','Ex']
+
+       Ex	Excellent-5
+       Gd	Good-4
+       TA	Average/Typical-3
+       Fa	Fair-2
+       Po	Poor-1
+	   nan	No-0
+	   
+['ExterQual', 'ExterCond', 'BsmtQual', 'BsmtCond', 'HeatingQC', 'KitchenQual', 'FireplaceQu', 'GarageQual', 'GarageCond']	   
+-----------------------------------------------------------------------
+============================
+LotShape: ['Reg' 'IR1' 'IR2' 'IR3']
+
+       3 Reg	Regular	
+       2 IR1	Slightly irregular
+       1 IR2	Moderately Irregular
+       0 IR3	Irregular
+===================================
+LandSlope: ['Gtl' 'Mod' 'Sev']
+
+       0 Gtl	Gentle slope
+       1 Mod	Moderate Slope	
+       2 Sev	Severe Slope
+==============================
+LandContour: ['Lvl' 'Bnk' 'HLS' 'Low']
+
+      0 Lvl	Near Flat/Level	
+      1 Bnk	Banked - Quick and significant rise from street grade to building
+      2 HLS	Hillside - Significant slope from side to side
+      3 Low	Depression
+===================================
+BsmtExposure: ['No' 'Gd' 'Mn' 'Av' nan]
+
+      4 Gd	Good Exposure
+      3 Av	Average Exposure (split levels or foyers typically score average or above)	
+      2 Mn	Mimimum Exposure
+      1 No	No Exposure
+      0 nan	No Basement
+==============================================
+BsmtFinType1: ['GLQ' 'ALQ' 'Unf' 'Rec' 'BLQ' nan 'LwQ']
+BsmtFinType2: ['Unf' 'BLQ' nan 'ALQ' 'Rec' 'LwQ' 'GLQ']
+
+       GLQ	Good Living Quarters
+       ALQ	Average Living Quarters
+       BLQ	Below Average Living Quarters	
+       Rec	Average Rec Room
+       LwQ	Low Quality
+       Unf	Unfinshed
+       nan	No
+========================================================
+GarageFinish: ['RFn' 'Unf' 'Fin' nan]
+
+      3 Fin 	Finished
+      2 RFn 	Rough Finished	
+      1 Unf	 Unfinished
+      0 nan	 No Garage
+==============================================================
+Functional: ['Typ' 'Min1' 'Maj1' 'Min2' 'Mod' 'Maj2' 'Sev']
+
+      7 Typ	    Typical Functionality
+      6 Min1	Minor Deductions 1
+      5 Min2	Minor Deductions 2
+      4 Mod  	Moderate Deductions
+      3 Maj1	Major Deductions 1
+      2 Maj2	Major Deductions 2
+      1 Sev  	Severely Damaged
+      	
+================================================
+PavedDrive: ['Y' 'N' 'P']
+
+     2  Y	Paved 
+     1  P	Partial Pavement
+     0  N	Dirt/Gravel
+
+
+=========================
+['LotShape', 'LandSlope', 'LandContour', 'BsmtExposure', 'BsmtFinType1', 'BsmtFinType2', 'GarageFinish', 'Functional', 'PavedDrive']
+
+
+
+
+=========================================
+Binary Categorical Fetures: ['Street', 'Utilities', 'Condition2', 'RoofMatl', 'CentralAir'] 
+
+--------------------------------------------------------------------------------------------------------
+
+MasVnrType: ['BrkFace' 'missing' 'Stone' 'BrkCmn']: MasVnrType
+missing    872
+BrkFace    445
+Stone      128
+BrkCmn      15
+Name: count, dtype: int64 
+
+================
+BsmtQual: ['Gd' 'TA' 'Ex' 'missing' 'Fa']: BsmtQual
+TA         649
+Gd         618
+Ex         121
+missing     37
+Fa          35
+Name: count, dtype: int64 
+
+================
+BsmtCond: ['TA' 'Gd' 'missing' 'Fa' 'Rare_variable']: BsmtCond
+TA               1311
+Gd                 65
+Fa                 45
+missing            37
+Rare_variable       2
+Name: count, dtype: int64 
+
+================
+BsmtExposure: ['No' 'Gd' 'Mn' 'Av' 'missing']: BsmtExposure
+No         953
+Av         221
+Gd         134
+Mn         114
+missing     38
+Name: count, dtype: int64 
+
+================
+BsmtFinType1: ['GLQ' 'ALQ' 'Unf' 'Rec' 'BLQ' 'missing' 'LwQ']: BsmtFinType1
+Unf        430
+GLQ        418
+ALQ        220
+BLQ        148
+Rec        133
+LwQ         74
+missing     37
+Name: count, dtype: int64 
+
+================
+BsmtFinType2: ['Unf' 'BLQ' 'missing' 'ALQ' 'Rec' 'LwQ' 'Rare_variable']: BsmtFinType2
+Unf              1256
+Rec                54
+LwQ                46
+missing            38
+BLQ                33
+ALQ                19
+Rare_variable      14
+Name: count, dtype: int64 
+
+================
+Electrical: ['SBrkr' 'FuseF' 'FuseA' 'Rare_variable']: Electrical
+SBrkr            1334
+FuseA              94
+FuseF              27
+Rare_variable       5
+Name: count, dtype: int64 
+
+================
+FireplaceQu: ['missing' 'TA' 'Gd' 'Fa' 'Ex' 'Po']: FireplaceQu
+missing    690
+Gd         380
+TA         313
+Fa          33
+Ex          24
+Po          20
+Name: count, dtype: int64 
+
+================
+GarageType: ['Attchd' 'Detchd' 'BuiltIn' 'Rare_variable' 'missing' 'Basment']: GarageType
+Attchd           870
+Detchd           387
+BuiltIn           88
+missing           81
+Basment           19
+Rare_variable     15
+Name: count, dtype: int64 
+
+================
+GarageFinish: ['RFn' 'Unf' 'Fin' 'missing']: GarageFinish
+Unf        605
+RFn        422
+Fin        352
+missing     81
+Name: count, dtype: int64 
+
+================
+GarageQual: ['TA' 'Fa' 'Rare_variable' 'missing']: GarageQual
+TA               1311
+missing            81
+Fa                 48
+Rare_variable      20
+Name: count, dtype: int64 
+
+================
+GarageCond: ['TA' 'Fa' 'missing' 'Rare_variable']: GarageCond
+TA               1326
+missing            81
+Fa                 35
+Rare_variable      18
+Name: count, dtype: int64 
+
+===================================================+++++======================
+Categorical Features with null
+
+MasVnrType       872
+FireplaceQu      690
+GarageType        81
+GarageFinish      81
+GarageQual        81
+GarageCond        81
+BsmtFinType2      38
+BsmtExposure      38
+BsmtFinType1      37
+BsmtCond          37
+BsmtQual          37
+Electrical         1
+
+======================================++++===============================
+MasVnrType: ['BrkFace' 'missing' 'Stone' 'BrkCmn']
+BsmtQual: ['Gd' 'TA' 'Ex' 'missing' 'Fa']
+BsmtCond: ['TA' 'Gd' 'missing' 'Fa' 'Po']
+BsmtExposure: ['No' 'Gd' 'Mn' 'Av' 'missing']
+BsmtFinType1: ['GLQ' 'ALQ' 'Unf' 'Rec' 'BLQ' 'missing' 'LwQ']
+BsmtFinType2: ['Unf' 'BLQ' 'missing' 'ALQ' 'Rec' 'LwQ' 'GLQ']
+Electrical: ['SBrkr' 'FuseF' 'FuseA' 'FuseP' 'Mix' 'missing']
+FireplaceQu: ['missing' 'TA' 'Gd' 'Fa' 'Ex' 'Po']
+GarageType: ['Attchd' 'Detchd' 'BuiltIn' 'CarPort' 'missing' 'Basment' '2Types']
+GarageFinish: ['RFn' 'Unf' 'Fin' 'missing']
+GarageQual: ['TA' 'Fa' 'Gd' 'missing' 'Ex' 'Po']
+GarageCond: ['TA' 'Fa' 'missing' 'Gd' 'Po' 'Ex']

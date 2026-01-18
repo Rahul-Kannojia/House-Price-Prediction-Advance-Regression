@@ -1,0 +1,74 @@
+Categorical Features:
+=====================
+Categorical Features: ['MSZoning', 'Street', 'Alley', 'LotShape', 'LandContour', 'Utilities', 'LotConfig', 'LandSlope', 'Neighborhood', 'Condition1', 'Condition2', 'BldgType', 'HouseStyle', 'RoofStyle', 'RoofMatl', 'Exterior1st', 'Exterior2nd', 'MasVnrType', 'ExterQual', 'ExterCond', 'Foundation', 'BsmtQual', 'BsmtCond', 'BsmtExposure', 'BsmtFinType1', 'BsmtFinType2', 'Heating', 'HeatingQC', 'CentralAir', 'Electrical', 'KitchenQual', 'Functional', 'FireplaceQu', 'GarageType', 'GarageFinish', 'GarageQual', 'GarageCond', 'PavedDrive', 'PoolQC', 'Fence', 'MiscFeature', 'SaleType', 'SaleCondition'] 
+
+
+Ordinal Feature:
+================
+LotShape
+LandSlope
+LandContour
+ExterQual
+ExterCond
+BsmtQual
+BsmtCond
+BsmtExposure
+BsmtFinType1
+BsmtFinType2
+HeatingQC
+KitchenQual
+Functional
+FireplaceQu
+GarageFinish
+GarageQual
+GarageCond
+PavedDrive
+PoolQC*---Too many missing values
+Fence*---Too many missing values
+
+ordinal_categorical_features = [
+    'LotShape', 'LandSlope', 'LandContour', 'ExterQual', 'ExterCond', 
+    'BsmtQual', 'BsmtCond', 'BsmtExposure', 'BsmtFinType1', 'BsmtFinType2', 
+    'HeatingQC', 'KitchenQual', 'Functional', 'FireplaceQu', 'GarageFinish', 
+    'GarageQual', 'GarageCond', 'PavedDrive'
+]
+
+
+Nominal Features:
+=================
+
+MSZoning
+Street
+Alley*---Too many missing values
+LotConfig
+Neighborhood
+Condition1
+Condition2
+BldgType
+HouseStyle
+RoofStyle
+RoofMatl
+Utilities
+Exterior1st
+Exterior2nd
+MasVnrType
+Foundation
+Heating
+CentralAir
+Electrical
+GarageType
+MiscFeature*---Too many missing values
+SaleType
+SaleCondition
+
+nominal_categorical_features = [
+    'MSZoning', 'Street', 'LotConfig', 'Neighborhood', 
+    'Condition1', 'Condition2', 'BldgType', 'HouseStyle', 'RoofStyle', 
+    'RoofMatl', 'Utilities', 'Exterior1st', 'Exterior2nd', 'MasVnrType', 
+    'Foundation', 'Heating', 'CentralAir', 'Electrical', 'GarageType', 
+     'SaleType', 'SaleCondition'
+]
+
+
+
+Binary Categorical Fetures: ['Street', 'Utilities', 'Condition2', 'RoofMatl', 'CentralAir'] 
